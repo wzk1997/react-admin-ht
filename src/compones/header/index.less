@@ -1,0 +1,47 @@
+.header{
+  height: 80px;
+  background-color: white;
+  .header-top{
+    height: 40px;
+    text-align: right;
+    line-height: 40px;
+    padding-right: 20px;
+    border-bottom: #1da57a solid 1px;
+    span{
+     margin-right: 15px;
+    }
+  }
+  .header-boottom{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    .header-boottom-left{
+      position: relative;  /*相对定位   fixed绝对定位 相对于浏览器窗口进行定位*/
+      width: 25%;
+      font-size: 20px;
+      text-align: center;
+      &::after{
+        content: '';
+        position: absolute; /*绝对定位*/
+        right: 50%;
+        transform: translateX(50%);
+        top: 100%;
+        border-top: 20px solid white;
+        border-right: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-left: 20px solid transparent;
+      }
+      }
+    .header-boottom-right{
+      width: 75%;
+      margin-right: 30px;
+      text-align: right;
+
+
+      .header-boottom-cloud{
+        margin: 0 15px;
+      }
+      }
+
+    }
+}
